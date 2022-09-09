@@ -34,7 +34,7 @@ msgstr "Text"
 
 msgctxt "slide-format"
 msgid "Song numbers"
-msgstr "Liednumern"
+msgstr "Liednummern"
 
 #: admin/class-foyer-admin-slide-background-video.php:133
 #: admin/class-foyer-admin-slide-background-html5-video.php:142
