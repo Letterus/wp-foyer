@@ -1,4 +1,5 @@
-.foyer-slide.foyer-slide-text {
+.foyer-slide.foyer-slide-text,
+.foyer-slide.foyer-slide-songnumbers {
 
 	.inner {
 		display: flex;
@@ -24,9 +25,10 @@
 			.foyer-slide-field-content {
 				line-height: 1.5;
 				padding: 0.5rem 1rem;
-  				background-color: rgba(255,255,255, 0.8);
+				background-color: rgba(255, 255, 255, 0.8);
 				box-decoration-break: clone;
 			}
+
 			.foyer-slide-field-pretitle span,
 			.foyer-slide-field-subtitle span {
 				line-height: 1.7;
@@ -39,13 +41,32 @@
 
 		@media (min-aspect-ratio: 1/1) {
 			flex-direction: row;
+
 			.foyer-slide-fields {
 				width: (100% * 2/3);
 			}
 		}
+	}
+}
+
+.foyer-slide.foyer-slide-text {
+	.inner {
 		@media (max-aspect-ratio: 1/1) {
 			flex-direction: column;
 			justify-content: flex-end;
 		}
+	}
+}
+
+.foyer-slide.foyer-slide-songnumbers {
+	.inner {
+		@media (max-aspect-ratio: 1/1) {
+			flex-direction: column;
+			justify-content: normal;
+		}
+	}
+
+	.foyer-slide-field {
+		font-size: 12rem;
 	}
 }
