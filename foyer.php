@@ -65,7 +65,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-foyer.php';
  */
 function run_foyer() {
 
-	define( 'FOYER_PLUGIN_VERSION', '1.7.5' ); // do not access directly
+	define( 'FOYER_PLUGIN_VERSION', '1.7.5.1-kkdi' ); // do not access directly
 	define( 'FOYER_PLUGIN_NAME', 'foyer' ); // do not access directly
 	define( 'FOYER_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 	define( 'FOYER_PLUGIN_URL', trailingslashit( plugins_url( '', __FILE__ ) ) );

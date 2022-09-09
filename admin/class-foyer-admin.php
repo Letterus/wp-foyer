@@ -121,6 +121,7 @@ class Foyer_Admin {
 	 *					Removed include admin/class-foyer-admin-slide-format-video.php.
 	 * @since	1.6.0	Included the HTML5 Video slide background admin.
 	 * @since	1.7.0	Included the Upcoming Productions slide background admin.
+	 * @since	1.7.5.1-kkdi Included the song numbers template
 	 *
 	 * @access	private
 	 */
@@ -150,6 +151,7 @@ class Foyer_Admin {
 		require_once FOYER_PLUGIN_PATH . 'admin/class-foyer-admin-slide-format-production.php';
 		require_once FOYER_PLUGIN_PATH . 'admin/class-foyer-admin-slide-format-recent-posts.php';
 		require_once FOYER_PLUGIN_PATH . 'admin/class-foyer-admin-slide-format-text.php';
+		require_once FOYER_PLUGIN_PATH . 'admin/class-foyer-admin-slide-format-songnumbers.php';
 		require_once FOYER_PLUGIN_PATH . 'admin/class-foyer-admin-slide-format-upcoming-productions.php';
 	}
 }

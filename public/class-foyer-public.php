@@ -56,8 +56,7 @@ class Foyer_Public {
 		 * Internal image sizes, to force cropping of different intermediate sizes.
 		 */
 		add_image_size( 'foyer_fhd', 1920, 1920, false ); // soft crop: scaled down to fit within 1920x1920 (Full HD)
-//		add_image_size( 'foyer_4kuhd', 3840, 3840, false ); // soft crop: scaled down to fit within 3840x3840 (4K Ultra HD)
-//		4K UHD is disabled for now.
+		add_image_size( 'foyer_4kuhd', 3840, 3840, false ); // soft crop: scaled down to fit within 3840x3840 (4K Ultra HD)
 
 		/*
 		 * @deprecated	1.5.2

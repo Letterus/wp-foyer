@@ -212,6 +212,36 @@ class Foyer_Slide_Formats {
 	/**
 	 * Adds the Text slide format.
 	 *
+	 * @since	1.7.5.1-kkdi
+	 *
+	 * @param 	array	$slide_formats	The current slide formats.
+	 * @return	array					The slide formats with the Song numbers slide format added.
+	 */
+	static function add_songnumbers_slide_format( $slide_formats ) {
+
+		$slide_format_backgrounds = array( 'default', 'image', 'html5-video', 'video' );
+
+		/**
+		 * Filter available slide backgrounds for this slide format.
+		 *
+		 * @since	1.5.0
+		 * @param	array	$slide_format_backgrounds	The currently available slide backgrounds for this slide format.
+		 */
+		$slide_format_backgrounds = apply_filters( 'foyer/slides/backgrounds/format=songnumbers', $slide_format_backgrounds );
+
+		$slide_formats['songnumbers'] = array(
+			'title' => _x( 'Song numbers', 'slide-format', 'foyer' ),
+			'description' => __( 'Show song numbers, one below the other.', 'foyer' ),
+			'meta_box' => array( 'Foyer_Admin_Slide_Format_Songnumbers', 'slide_meta_box' ),
+			'save_post' => array( 'Foyer_Admin_Slide_Format_Songnumbers', 'save_slide' ),
+			'slide_backgrounds' => $slide_format_backgrounds,
+		);
+		return $slide_formats;
+	}
+
+	/**
+	 * Adds the Song numbers slide format.
+	 *
 	 * @since	1.5.0
 	 * @since	1.5.1	Renamed the slide format from 'Manual text' to 'Text'.
 	 * @since	1.6.0	Added the HTML5 Video slide background to this slide format's list of available backgrounds.
