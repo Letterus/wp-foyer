@@ -223,7 +223,8 @@ html {
   line-height: 1.2;
 }
 .foyer-slide.foyer-slide-songnumbers .foyer-slide-field {
-  font-size: 12rem;
+  font-size: 13rem;
+  font-weight: 600;
 }
 .foyer-slide .foyer-slide-field.foyer-slide-field-title {
   font-size: 5rem;
@@ -440,6 +441,11 @@ html {
     height: 50%;
   }
 }
+
+.foyer-slide.foyer-slide-songnumbers {
+	background-color: black;
+}
+
 .foyer-slide.foyer-slide-text .inner, .foyer-slide.foyer-slide-songnumbers .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,17 +476,25 @@ html {
 .foyer-slide.foyer-slide-text .inner .foyer-slide-fields .foyer-slide-field-pretitle span,
 .foyer-slide.foyer-slide-text .inner .foyer-slide-fields .foyer-slide-field-title span,
 .foyer-slide.foyer-slide-text .inner .foyer-slide-fields .foyer-slide-field-subtitle span,
-.foyer-slide.foyer-slide-text .inner .foyer-slide-fields .foyer-slide-field-content,
-.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-pretitle span,
-.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-title span,
-.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-subtitle span,
-.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-content {
+.foyer-slide.foyer-slide-text .inner .foyer-slide-fields .foyer-slide-field-content {
   line-height: 1.5;
   padding: 0.5rem 1rem;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
 }
+
+.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-pretitle span,
+.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-title span,
+.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-subtitle span,
+.foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-content {
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+	color: white;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
 .foyer-slide.foyer-slide-text .inner .foyer-slide-fields .foyer-slide-field-pretitle span,
 .foyer-slide.foyer-slide-text .inner .foyer-slide-fields .foyer-slide-field-subtitle span,
 .foyer-slide.foyer-slide-songnumbers .inner .foyer-slide-fields .foyer-slide-field-pretitle span,
