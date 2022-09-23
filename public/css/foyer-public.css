@@ -309,7 +309,7 @@ html {
 .foyer-slide.foyer-slide-post .inner .foyer-slide-fields .foyer-slide-field-title span,
 .foyer-slide.foyer-slide-post .inner .foyer-slide-fields .foyer-slide-field-date span,
 .foyer-slide.foyer-slide-post .inner .foyer-slide-fields .foyer-slide-field-content {
-  line-height: 1.5;
+  line-height: 1.2;
   padding: 0.5rem 1rem;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-decoration-break: clone;
